@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model car {
+  id     BigInt  @id @default(autoincrement())
+  make   String  @db.VarChar(100)
+  model  String  @db.VarChar(100)
+  price  Decimal @db.Decimal(19, 2)
+  person person?
+}
+
+model person {
+  id               BigInt   @id @default(autoincrement())
+  first_name       String   @db.VarChar(50)
+  last_name        String   @db.VarChar(50)
+  gender           String   @db.VarChar(50)
+  email            String?  @db.VarChar(100)
+  date_of_birth    DateTime @db.Date
+  country_of_birth String   @db.VarChar(50)
+  car_id           BigInt?  @unique
+  pet_id           BigInt?  @unique
+  car              car?     @relation(fields: [car_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  pet              pet?     @relation(fields: [pet_id], references: [id])
+}
+
+model pet {
+  id     BigInt  @id @default(autoincrement())
+  name   String  @db.VarChar(50)
+  animal String  @db.VarChar(50)
+  person person?
+}

@@ -21,6 +21,11 @@ const Menu: React.FC<{}> = ({}) => {
       label: "Complete",
       link: "/complete",
     },
+    {
+      label: "LinkedIn",
+      link: "https://www.linkedin.com/in/jonathan-muroma-0808b018a",
+      target: "_blank",
+    },
   ];
 
   return (
@@ -90,7 +95,7 @@ const Menu: React.FC<{}> = ({}) => {
       >
         <Flex flexDir={"column"} alignItems="start" gap="5px">
           {menuItems.map((item, idx) => (
-            <Link href={item.link}>
+            <Link href={item.link} target={item.target ? item.target : ""}>
               <Flex
                 key={idx}
                 height={"30px"}

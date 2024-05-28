@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid, Image, Text, Flex } from "@chakra-ui/react";
 import Title from "./title";
 import Link from "next/link";
-import { CEREAL_DARK_AQUA, CEREAL_DARK_GREEN } from "@/utils/constants";
+import { CEREAL_DARK_GREEN } from "@/utils/constants";
 
 interface Projects {}
 
@@ -22,7 +22,7 @@ const projectData = [
   },
   {
     name: "Elfving forteco",
-    img: "images/logos/elfving_forteco.png",
+    img: "images/logos/Elfving_forteco.png",
     desc: "Multi-website",
     link: "https://elfvingforteco.fi/",
   },

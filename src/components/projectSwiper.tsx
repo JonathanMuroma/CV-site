@@ -38,8 +38,6 @@ const ProjectSwiper: React.FC<ProjectSwiper> = ({}) => {
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        // onSwiper={(swiper: any) => console.log(swiper)}
-        // onSlideChange={() => console.log("slide change")}
       >
         {componentData.map((slide, idx) => (
           <SwiperSlide key={idx}>

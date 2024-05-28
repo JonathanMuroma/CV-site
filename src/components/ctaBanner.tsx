@@ -32,6 +32,7 @@ const CtaBanner: React.FC<CtaBanner> = ({
       backgroundRepeat={"no-repeat"}
       backgroundSize="cover"
       backgroundAttachment={"fixed"}
+      overflow={"hidden"}
     >
       <ScrollAnimation animateIn="bounceIn">
         <Box

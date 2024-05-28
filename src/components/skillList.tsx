@@ -61,6 +61,7 @@ const SkillList: React.FC<SkillList> = ({}) => {
         margin="40px 0"
         px={{ base: "15px", lg: "100px" }}
         display={{ base: "none", md: "block" }}
+        overflow={"hidden"}
       >
         <Title title="Skills" />
         <Flex justifyContent={"space-around"} gap={"10px"} mb="-5px">

@@ -20,7 +20,7 @@ const componentData = [
     title: "XR Center - Unity engine VR-development trainee",
     link: "Link to details of place?",
     text: "Worked in a 3 person team as a Unity developer, creating a nurse training VR application for studying nurses. I took care of creating the online co-op functionalities and handling Unitys VR-library.",
-    icon: "images/XR_logo.SVG",
+    icon: "images/XR_logo.svg",
     iconAlt: "XR Center",
   },
   {
@@ -43,7 +43,7 @@ const componentData = [
 
 const Career: React.FC<Career> = ({}) => {
   return (
-    <Box padding={"0 15px"} margin={"40px 0"}>
+    <Box padding={"0 15px"} margin={"40px 0"} overflow={"hidden"}>
       <Title title="Career" />
       <Box display="flex" alignItems={"center"} flexDir="column">
         {componentData.map((data, idx) => (

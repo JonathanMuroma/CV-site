@@ -22,7 +22,7 @@ const Hero: React.FC<Hero> = ({
   color,
 }) => {
   const mobileHeading = title.split(" ");
-  console.log(mobileHeading);
+
   return (
     <Box
       m="0 0px"
@@ -35,6 +35,7 @@ const Hero: React.FC<Hero> = ({
       position="relative"
       h={"98vh"}
       w="100%"
+      overflow={"hidden"}
     >
       <Box pos={"absolute"} zIndex="9" h={"98vh"} w="100%">
         <InfiniteScrollImg />

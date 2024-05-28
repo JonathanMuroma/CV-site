@@ -168,7 +168,7 @@ const Projects: React.FC<Projects> = ({}) => {
                       {data.desc}
                     </Text>
                     <Box
-                      top={"0"}
+                      top={"-5px"}
                       left={"0"}
                       pos={"absolute"}
                       height={"0px"}
@@ -176,7 +176,7 @@ const Projects: React.FC<Projects> = ({}) => {
                       bg={CEREAL_DARK_GREEN}
                       transition={"all 0.25s"}
                       zIndex={"1"}
-                      _groupHover={{ height: "100%" }}
+                      _groupHover={{ height: "calc(100% + 5px)" }}
                     ></Box>
                   </Box>
                 </Flex>

@@ -78,10 +78,9 @@ const SkillList: React.FC<SkillList> = ({}) => {
                 animateIn="fadeInLeft"
                 delay={idx * 50 + (skills.length / 2) * 100}
                 animateOnce={true}
+                key={idx}
               >
-                <Text key={idx} mb="5px">
-                  {val}
-                </Text>
+                <Text mb="5px">{val}</Text>
               </ScrollAnimation>
             ))}
           </Box>
@@ -104,10 +103,9 @@ const SkillList: React.FC<SkillList> = ({}) => {
                     animateIn="fadeInLeft"
                     delay={idx * 50}
                     animateOnce={true}
+                    key={idx}
                   >
-                    <Text key={idx} mb="5px">
-                      {val}
-                    </Text>
+                    <Text mb="5px">{val}</Text>
                   </ScrollAnimation>
                 );
             })}
@@ -152,10 +150,9 @@ const SkillList: React.FC<SkillList> = ({}) => {
                 animateIn="fadeInRight"
                 delay={idx * 50 + (skills.length / 2) * 100}
                 animateOnce={true}
+                key={idx}
               >
-                <Text key={idx} mb="5px">
-                  {val}
-                </Text>
+                <Text mb="5px">{val}</Text>
               </ScrollAnimation>
             ))}
           </Box>

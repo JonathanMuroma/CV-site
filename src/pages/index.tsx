@@ -28,7 +28,7 @@ const HomePage: NextPage = () => {
       <Career />
       <SkillList />
       <LogoBanner />
-      <ProjectSwiper />
+      {/* <ProjectSwiper /> */}
       <CtaBanner
         title="CHECK THE PROJECT CODE ON GITHUB"
         text="TESTI TEXTI KLIKKAA NAPPULAA!"

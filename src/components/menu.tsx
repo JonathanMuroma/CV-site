@@ -22,6 +22,10 @@ const Menu: React.FC<{}> = ({}) => {
       link: "/complete",
     },
     {
+      label: "Projects",
+      link: "/projects",
+    },
+    {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/jonathan-muroma-0808b018a",
       target: "_blank",
@@ -110,15 +114,18 @@ const Menu: React.FC<{}> = ({}) => {
                 role="group"
                 _hover={{ width: "120px" }}
                 transition="all 0.25s"
+                borderTop={`2px solid ${CEREAL_DARK_GREEN}`}
+                borderRight={`2px solid ${CEREAL_DARK_GREEN}`}
+                borderBottom={`2px solid ${CEREAL_DARK_GREEN}`}
               >
                 <Box pos="absolute" zIndex={"10"}>
                   {item.label}
                 </Box>
                 <Box
-                  top="0"
+                  top="-2px"
                   left="-100px"
                   height={"30px"}
-                  width="100%"
+                  width="calc(100% + 3px)"
                   pos="absolute"
                   zIndex={"9"}
                   background={CEREAL_LIGHT_BLUE}

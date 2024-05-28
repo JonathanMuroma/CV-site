@@ -42,7 +42,7 @@ const LogoBanner: React.FC<LogoBanner> = ({}) => {
           fontFamily={"agbalumo!important"}
           whiteSpace={"nowrap"}
         >
-          Sites I've worked on
+          Sites I&apos;ve worked on
         </Heading>
         <Box
           borderRadius={"0 100%  0 0 "}
@@ -72,6 +72,7 @@ const LogoBanner: React.FC<LogoBanner> = ({}) => {
               height={"auto"}
               key={idx}
               src={logo}
+              alt={"logo_render"}
             ></Image>
           ))}
         </Flex>

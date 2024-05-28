@@ -127,9 +127,9 @@ const Projects: React.FC<Projects> = ({}) => {
                 href={data.link}
                 target="_blank"
                 style={{ height: "100%", display: "block" }}
+                key={idx}
               >
                 <Flex
-                  key={idx}
                   justifySelf={"center"}
                   flexDir={"column"}
                   border={`2px solid ${CEREAL_DARK_GREEN}`}
@@ -154,6 +154,7 @@ const Projects: React.FC<Projects> = ({}) => {
                     mb="auto"
                     mt="auto"
                     py={{ base: "10px", sm: "0" }}
+                    alt={data.name}
                   />
                   <Box
                     p="15px 10px"
@@ -234,6 +235,7 @@ const Projects: React.FC<Projects> = ({}) => {
                   mb="auto"
                   mt="auto"
                   py={{ base: "10px", sm: "0" }}
+                  alt={data.name}
                 />
                 <Box p="15px 10px" bg="white" borderRadius={"0 0 25px 25px"}>
                   <Text textAlign={"center"}>{data.desc}</Text>

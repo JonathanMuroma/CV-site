@@ -99,9 +99,12 @@ const Menu: React.FC<{}> = ({}) => {
       >
         <Flex flexDir={"column"} alignItems="start" gap="5px">
           {menuItems.map((item, idx) => (
-            <Link href={item.link} target={item.target ? item.target : ""}>
+            <Link
+              href={item.link}
+              target={item.target ? item.target : ""}
+              key={idx}
+            >
               <Flex
-                key={idx}
                 height={"30px"}
                 alignItems={"center"}
                 backgroundColor="rgba(255,255,255,1)"

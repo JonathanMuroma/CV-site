@@ -143,6 +143,7 @@ const Projects: React.FC<Projects> = ({}) => {
                     transform: "translateY(-15px)",
                   }}
                   role="group"
+                  overflow={"hidden"}
                 >
                   <Image
                     src={data.img}
@@ -156,13 +157,7 @@ const Projects: React.FC<Projects> = ({}) => {
                     py={{ base: "10px", sm: "0" }}
                     alt={data.name}
                   />
-                  <Box
-                    p="15px 10px"
-                    bg="white"
-                    borderRadius={"0 0 25px 25px"}
-                    pos={"relative"}
-                    overflow={"hidden"}
-                  >
+                  <Box p="15px 10px" bg="white" pos={"relative"}>
                     <Text
                       pos={"relative"}
                       zIndex={"10"}

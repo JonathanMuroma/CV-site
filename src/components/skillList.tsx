@@ -119,10 +119,9 @@ const SkillList: React.FC<SkillList> = ({}) => {
                     animateIn="fadeInRight"
                     delay={(idx - skills.length / 2) * 50}
                     animateOnce={true}
+                    key={idx}
                   >
-                    <Text key={idx} mb="5px">
-                      {val}
-                    </Text>
+                    <Text mb="5px">{val}</Text>
                   </ScrollAnimation>
                 );
             })}

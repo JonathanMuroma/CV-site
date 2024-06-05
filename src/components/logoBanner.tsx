@@ -6,21 +6,21 @@ interface LogoBanner {}
 
 const LogoBanner: React.FC<LogoBanner> = ({}) => {
   const logos = [
-    "images/logos/betoni.png",
-    "images/logos/Cushman_&_Wakefield.png",
-    "images/logos/Elfving_forteco.png",
-    "images/logos/faba.png",
-    "images/logos/Invisible_ceilings.png",
-    "images/logos/kahviklubi.png",
-    "images/logos/karkare.png",
-    "images/logos/kielo.png",
-    "images/logos/lauritzon.png",
-    "images/logos/puumerkki.png",
-    "images/logos/rokotenyt.png",
-    "images/logos/tecci.png",
-    "images/logos/tectis.png",
-    "images/logos/tyy.png",
-    "images/logos/ziirto.png",
+    "/images/logos/betoni.png",
+    "/images/logos/Cushman_&_Wakefield.png",
+    "/images/logos/elfving_forteco.png",
+    "/images/logos/faba.png",
+    "/images/logos/Invisible_ceilings.png",
+    "/images/logos/kahviklubi.png",
+    "/images/logos/karkare.png",
+    "/images/logos/kielo.png",
+    "/images/logos/lauritzon.png",
+    "/images/logos/puumerkki.png",
+    "/images/logos/rokotenyt.png",
+    "/images/logos/tecci.png",
+    "/images/logos/tectis.png",
+    "/images/logos/tyy.png",
+    "/images/logos/ziirto.png",
   ];
 
   return (

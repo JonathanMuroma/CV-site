@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
-import Link from "next/link";
 import { Box } from "@chakra-ui/react";
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Career from "@/components/Career";
-import ProjectSwiper from "@/components/ProjectSwiper";
+// import ProjectSwiper from "@/components/ProjectSwiper";
 
 import CtaBanner from "@/components/CtaBanner";
 import { CEREAL_DARK_GREEN } from "@/utils/constants";

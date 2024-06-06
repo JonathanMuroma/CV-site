@@ -99,147 +99,149 @@ const projectData = [
 const Projects: React.FC<Projects> = ({}) => {
   return (
     <Box pt="100px" pb="50px" px={{ base: "15px", lg: "100px" }}>
-      <Title title="Released Projects" />
-      <Grid
-        templateColumns={{
-          base: "repeat(1, 1fr)",
-          sm: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
-          xl: "repeat(4, 1fr)",
-        }}
-        gap={{ base: "20px" }}
-        pt="25px"
-        mb="50px"
-      >
-        {projectData
-          .sort((a, b) => {
-            if (a.link !== undefined && b.link === undefined) {
-              return -1;
-            } else if (a.link === undefined && b.link !== undefined) {
-              return 1;
-            } else {
-              return -1;
-            }
-          })
-          .map((data, idx) => {
-            if (data.link)
-              return (
-                <Link
-                  href={data.link}
-                  target="_blank"
-                  style={{ height: "100%", display: "block" }}
-                  key={idx}
-                >
-                  <Flex
-                    justifySelf={"center"}
-                    flexDir={"column"}
-                    border={`2px solid ${CEREAL_DARK_GREEN}`}
-                    borderRadius={"25px"}
-                    bg={CEREAL_DARK_GREEN}
-                    w={"100%"}
-                    h="100%"
-                    transition={"all 0.25s"}
-                    _hover={{
-                      boxShadow: "0px 0px 34px -5px rgba(0,0,0,0.5)",
-                      transform: "translateY(-15px)",
-                    }}
-                    role="group"
-                    overflow={"hidden"}
+      <Flex margin={"auto"} maxW={"1920px"} flexDir={"column"}>
+        <Title title="Released Projects" />
+        <Grid
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+            xl: "repeat(4, 1fr)",
+          }}
+          gap={{ base: "20px" }}
+          pt="25px"
+          mb="50px"
+        >
+          {projectData
+            .sort((a, b) => {
+              if (a.link !== undefined && b.link === undefined) {
+                return -1;
+              } else if (a.link === undefined && b.link !== undefined) {
+                return 1;
+              } else {
+                return -1;
+              }
+            })
+            .map((data, idx) => {
+              if (data.link)
+                return (
+                  <Link
+                    href={data.link}
+                    target="_blank"
+                    style={{ height: "100%", display: "block" }}
+                    key={idx}
                   >
-                    <Image
-                      src={data.img}
-                      filter="invert(1)"
-                      height={"auto"}
-                      maxH={{ base: "150px", sm: "200px" }}
-                      width={"auto"}
-                      objectFit={"contain"}
-                      mb="auto"
-                      mt="auto"
-                      py={{ base: "10px", sm: "0" }}
-                      alt={data.name}
-                    />
-                    <Box p="15px 10px" bg="white" pos={"relative"}>
-                      <Text
-                        pos={"relative"}
-                        zIndex={"10"}
-                        textAlign={"center"}
-                        transition={"all 0.25s"}
-                        _groupHover={{ color: "white" }}
-                      >
-                        {data.desc}
-                      </Text>
-                      <Box
-                        top={"-5px"}
-                        left={"0"}
-                        pos={"absolute"}
-                        height={"0px"}
-                        w="100%"
-                        bg={CEREAL_DARK_GREEN}
-                        transition={"all 0.25s"}
-                        zIndex={"1"}
-                        _groupHover={{ height: "calc(100% + 5px)" }}
-                      ></Box>
-                    </Box>
-                  </Flex>
-                </Link>
+                    <Flex
+                      justifySelf={"center"}
+                      flexDir={"column"}
+                      border={`2px solid ${CEREAL_DARK_GREEN}`}
+                      borderRadius={"25px"}
+                      bg={CEREAL_DARK_GREEN}
+                      w={"100%"}
+                      h="100%"
+                      transition={"all 0.25s"}
+                      _hover={{
+                        boxShadow: "0px 0px 34px -5px rgba(0,0,0,0.5)",
+                        transform: "translateY(-15px)",
+                      }}
+                      role="group"
+                      overflow={"hidden"}
+                    >
+                      <Image
+                        src={data.img}
+                        filter="invert(1)"
+                        height={"auto"}
+                        maxH={{ base: "150px", sm: "200px" }}
+                        width={"auto"}
+                        objectFit={"contain"}
+                        mb="auto"
+                        mt="auto"
+                        py={{ base: "10px", sm: "0" }}
+                        alt={data.name}
+                      />
+                      <Box p="15px 10px" bg="white" pos={"relative"}>
+                        <Text
+                          pos={"relative"}
+                          zIndex={"10"}
+                          textAlign={"center"}
+                          transition={"all 0.25s"}
+                          _groupHover={{ color: "white" }}
+                        >
+                          {data.desc}
+                        </Text>
+                        <Box
+                          top={"-5px"}
+                          left={"0"}
+                          pos={"absolute"}
+                          height={"0px"}
+                          w="100%"
+                          bg={CEREAL_DARK_GREEN}
+                          transition={"all 0.25s"}
+                          zIndex={"1"}
+                          _groupHover={{ height: "calc(100% + 5px)" }}
+                        ></Box>
+                      </Box>
+                    </Flex>
+                  </Link>
+                );
+            })}
+        </Grid>
+        <Title title="Yet to be released" />
+        <Grid
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+            xl: "repeat(4, 1fr)",
+          }}
+          gap={{ base: "20px" }}
+          pt="25px"
+        >
+          {projectData
+            .sort((a, b) => {
+              if (a.link !== undefined && b.link === undefined) {
+                return -1;
+              } else if (a.link === undefined && b.link !== undefined) {
+                return 1;
+              } else {
+                return -1;
+              }
+            })
+            .map((data, idx) => {
+              if (data.link) {
+                return;
+              }
+              return (
+                <Flex
+                  key={idx}
+                  justifySelf={"center"}
+                  flexDir={"column"}
+                  border={`2px solid ${CEREAL_DARK_GREEN}`}
+                  borderRadius={"25px"}
+                  bg={CEREAL_DARK_GREEN}
+                  w={"100%"}
+                >
+                  <Image
+                    src={data.img}
+                    filter="invert(1)"
+                    height={"auto"}
+                    maxH={{ base: "150px", sm: "200px" }}
+                    width={"auto"}
+                    objectFit={"contain"}
+                    mb="auto"
+                    mt="auto"
+                    py={{ base: "10px", sm: "0" }}
+                    alt={data.name}
+                  />
+                  <Box p="15px 10px" bg="white" borderRadius={"0 0 25px 25px"}>
+                    <Text textAlign={"center"}>{data.desc}</Text>
+                    <Text textAlign={"center"}>Coming soon</Text>
+                  </Box>
+                </Flex>
               );
-          })}
-      </Grid>
-      <Title title="Yet to be released" />
-      <Grid
-        templateColumns={{
-          base: "repeat(1, 1fr)",
-          sm: "repeat(2, 1fr)",
-          md: "repeat(3, 1fr)",
-          xl: "repeat(4, 1fr)",
-        }}
-        gap={{ base: "20px" }}
-        pt="25px"
-      >
-        {projectData
-          .sort((a, b) => {
-            if (a.link !== undefined && b.link === undefined) {
-              return -1;
-            } else if (a.link === undefined && b.link !== undefined) {
-              return 1;
-            } else {
-              return -1;
-            }
-          })
-          .map((data, idx) => {
-            if (data.link) {
-              return;
-            }
-            return (
-              <Flex
-                key={idx}
-                justifySelf={"center"}
-                flexDir={"column"}
-                border={`2px solid ${CEREAL_DARK_GREEN}`}
-                borderRadius={"25px"}
-                bg={CEREAL_DARK_GREEN}
-                w={"100%"}
-              >
-                <Image
-                  src={data.img}
-                  filter="invert(1)"
-                  height={"auto"}
-                  maxH={{ base: "150px", sm: "200px" }}
-                  width={"auto"}
-                  objectFit={"contain"}
-                  mb="auto"
-                  mt="auto"
-                  py={{ base: "10px", sm: "0" }}
-                  alt={data.name}
-                />
-                <Box p="15px 10px" bg="white" borderRadius={"0 0 25px 25px"}>
-                  <Text textAlign={"center"}>{data.desc}</Text>
-                  <Text textAlign={"center"}>Coming soon</Text>
-                </Box>
-              </Flex>
-            );
-          })}
-      </Grid>
+            })}
+        </Grid>
+      </Flex>
     </Box>
   );
 };

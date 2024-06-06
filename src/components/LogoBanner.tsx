@@ -61,6 +61,8 @@ const LogoBanner: React.FC<LogoBanner> = ({}) => {
           alignItems={"center"}
           flexWrap={"wrap"}
           gap={{ base: "10px", md: "20px" }}
+          maxW={"1920px"}
+          margin={"auto"}
         >
           {logos.map((logo, idx) => (
             <Image

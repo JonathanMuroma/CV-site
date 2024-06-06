@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
-import TextAnimator from "./textAnimator";
+import TextAnimator from "./TextAnimator";
 import ScrollAnimation from "react-animate-on-scroll";
-import InfiniteScrollImg from "./infiniteScrollImg";
+import InfiniteScrollImg from "./InfiniteScrollImg";
 
 interface Hero {
   title: string;

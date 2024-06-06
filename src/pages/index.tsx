@@ -1,15 +1,15 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import { Box } from "@chakra-ui/react";
-import Hero from "@/components/hero";
-import AboutMe from "@/components/aboutMe";
-import Career from "@/components/career";
-import ProjectSwiper from "@/components/projectSwiper";
+import Hero from "@/components/Hero";
+import AboutMe from "@/components/AboutMe";
+import Career from "@/components/Career";
+import ProjectSwiper from "@/components/ProjectSwiper";
 
-import CtaBanner from "@/components/ctaBanner";
+import CtaBanner from "@/components/CtaBanner";
 import { CEREAL_DARK_GREEN } from "@/utils/constants";
-import SkillList from "@/components/skillList";
-import LogoBanner from "@/components/logoBanner";
+import SkillList from "@/components/SkillList";
+import LogoBanner from "@/components/LogoBanner";
 
 const HomePage: NextPage = () => {
   return (

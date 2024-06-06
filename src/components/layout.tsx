@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Menu from "./menu";
-import Footer from "./footer";
+import Menu from "./Menu";
+import Footer from "./Footer";
 
 interface Layout {
   children?: JSX.Element;

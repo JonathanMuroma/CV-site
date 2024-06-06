@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
-import Title from "./title";
+import Title from "./Title";
 
 interface AboutMe {
   imgPath: string;

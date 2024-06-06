@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Person } from "@/utils/types";
-import PersonCard from "@/components/personCard";
+import PersonCard from "@/components/PersonCard";
 import { Heading, Box, Input, Text } from "@chakra-ui/react";
 import usePersonsQuery from "@/queries/react-query/persons";
 import { useUpdatePerson } from "@/queries/react-query/updatePerson";

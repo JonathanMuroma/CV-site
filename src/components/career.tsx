@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, Heading, Grid, GridItem, Image } from "@chakra-ui/react";
-import Title from "./title";
+import Title from "./Title";
 import { CEREAL_DARK_GREEN, CEREAL_LIGHT_BLUE } from "@/utils/constants";
 import ScrollAnimation from "react-animate-on-scroll";
 

@@ -2,13 +2,14 @@ import { ChakraProvider, CSSReset, extendTheme } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { QueryClient, QueryClientProvider } from "react-query";
-import Layout from "@/components/layout";
+import Layout from "@/components/Layout";
 
 import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const themeSettings = extendTheme({});
   const queryClient = new QueryClient();
+  //TODO reate a 404 page
   return (
     <>
       <Head>

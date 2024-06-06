@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Image, Text, Flex } from "@chakra-ui/react";
-import Title from "./title";
+import Title from "./Title";
 import Link from "next/link";
 import { CEREAL_DARK_GREEN } from "@/utils/constants";
 
@@ -22,7 +22,7 @@ const projectData = [
   },
   {
     name: "Elfving forteco",
-    img: "/images/logos/elfving_forteco.png",
+    img: "/images/logos/elfving-forteco.png",
     desc: "Multi-website",
     link: "https://elfvingforteco.fi/",
   },
@@ -95,7 +95,7 @@ const projectData = [
     desc: "Website & web-app",
   },
 ];
-
+//TODO: max width set to 1920
 const Projects: React.FC<Projects> = ({}) => {
   return (
     <Box pt="100px" pb="50px" px={{ base: "15px", lg: "100px" }}>

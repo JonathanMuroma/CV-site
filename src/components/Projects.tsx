@@ -10,7 +10,7 @@ interface Projects {}
 const projectData = [
   {
     name: "Betoni",
-    img: "/images/logos/betoni.png",
+    img: "/images/logos/elfving-forteco.png",
     desc: "Website",
     link: "https://betoni.com/",
   },

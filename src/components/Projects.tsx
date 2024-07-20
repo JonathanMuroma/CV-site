@@ -6,7 +6,7 @@ import { CEREAL_DARK_GREEN } from "@/utils/constants";
 
 interface Projects {}
 
-//Add extra value, which holds val for spacing the logos better in someway
+//TODO Add extra value, which holds val for spacing the logos better in someway
 const projectData = [
   {
     name: "Betoni",
@@ -53,6 +53,7 @@ const projectData = [
     name: "Kielo",
     img: "/images/logos/kielo.png",
     desc: "Website",
+    link: "https://kielotoimitilat.fi/",
   },
   {
     name: "Lauritzon",
@@ -95,7 +96,7 @@ const projectData = [
     desc: "Website & web-app",
   },
 ];
-//TODO: max width set to 1920
+
 const Projects: React.FC<Projects> = ({}) => {
   return (
     <Box pt="100px" pb="50px" px={{ base: "15px", lg: "100px" }}>

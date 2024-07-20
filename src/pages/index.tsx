@@ -9,6 +9,7 @@ import CtaBanner from "@/components/CtaBanner";
 import { CEREAL_DARK_GREEN } from "@/utils/constants";
 import SkillList from "@/components/SkillList";
 import LogoBanner from "@/components/LogoBanner";
+// import CtaRow from "@/components/CtaRow";
 
 const HomePage: NextPage = () => {
   return (
@@ -19,22 +20,17 @@ const HomePage: NextPage = () => {
         backgroundCol={CEREAL_DARK_GREEN}
         color="white"
       />
-      <AboutMe
-        imgPath="images/stock_portrait.jpg"
-        title="About Me"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      />
+      <AboutMe imgPath="images/portrait.jpeg" title="About Me" />
       <Career />
       <SkillList />
       <LogoBanner />
       {/* <ProjectSwiper /> */}
+      {/* <CtaRow /> */}
       <CtaBanner
-        title="CHECK THE PROJECT CODE ON GITHUB"
-        text="TESTI TEXTI KLIKKAA NAPPULAA!"
+        title="Check the code on github!"
+        text="Take a look at this sites github page and look into the code and how this was made."
         link="https://www.youtube.com/"
-        buttonLabel="Check it out"
-        // backgroundCol={CEREAL_DARK_GREEN}
-        // textColor={CEREAL_LIGHT_BLUE}
+        buttonLabel="Check it out!"
       />
     </Box>
   );

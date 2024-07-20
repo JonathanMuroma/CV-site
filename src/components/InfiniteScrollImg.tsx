@@ -27,8 +27,8 @@ const InfiniteScrollImg: React.FC<infiniteScrollImg> = () => {
           h={"100%"}
           w="100%"
         >
-          <Img src="images/banner_wip.png" objectFit={"cover"} />
-          <Img src="images/banner_wip.png" objectFit={"cover"} />
+          <Img src="images/hero_banner_02.png" objectFit={"cover"} />
+          <Img src="images/hero_banner_02.png" objectFit={"cover"} />
         </Flex>
       </Box>
     </Box>

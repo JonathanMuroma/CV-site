@@ -7,9 +7,15 @@ interface Button {
   link?: string;
   clickFunction?: () => void;
   label: string;
+  target?: boolean;
 }
 
-const Button: React.FC<Button> = ({ link, clickFunction, label }) => {
+const Button: React.FC<Button> = ({
+  link,
+  clickFunction,
+  label,
+  target = false,
+}) => {
   const router = useRouter();
   return (
     <Box
@@ -20,7 +26,7 @@ const Button: React.FC<Button> = ({ link, clickFunction, label }) => {
           clickFunction();
         }
         if (link) {
-          router.push(link);
+          target ? window.open(link) : router.push(link);
         }
       }}
       borderRadius="25px"

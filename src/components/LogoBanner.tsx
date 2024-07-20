@@ -22,7 +22,7 @@ const LogoBanner: React.FC<LogoBanner> = ({}) => {
     "/images/logos/tyy.png",
     "/images/logos/ziirto.png",
   ];
-  //TODO set max width to 1920
+
   return (
     <Box mt="60px">
       <Flex justifyContent={"center"} alignItems={"stretch"}>

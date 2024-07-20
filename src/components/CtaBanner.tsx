@@ -48,6 +48,7 @@ const CtaBanner: React.FC<CtaBanner> = ({
               textAlign={"center"}
               mb="10px"
               color={textColor ? textColor : "inherit"}
+              textTransform={"uppercase"}
             >
               {title}
             </Heading>

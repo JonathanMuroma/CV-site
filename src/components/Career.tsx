@@ -103,10 +103,14 @@ const Career: React.FC<Career> = ({}) => {
                 <Heading as="h3" mb="2px" fontSize={"20px"} pt="11px">
                   {data.title}
                 </Heading>
+                {/*
+                  TODO Leave out for now
                 <Text mb="10px" fontSize={"15px"} lineHeight="19px">
                   {data.link}
+                </Text> */}
+                <Text mb="25px" mt="10px">
+                  {data.text}
                 </Text>
-                <Text mb="25px">{data.text}</Text>
               </ScrollAnimation>
             </GridItem>
           </Grid>

@@ -14,14 +14,6 @@ const Menu: React.FC<{}> = ({}) => {
       link: "/",
     },
     {
-      label: "Contact",
-      link: "/contact",
-    },
-    {
-      label: "Complete",
-      link: "/complete",
-    },
-    {
       label: "Projects",
       link: "/projects",
     },

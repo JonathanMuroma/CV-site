@@ -5,10 +5,9 @@ import Title from "./Title";
 interface AboutMe {
   imgPath: string;
   title: string;
-  text: string;
 }
 
-const AboutMe: React.FC<AboutMe> = ({ imgPath, title, text }) => {
+const AboutMe: React.FC<AboutMe> = ({ imgPath, title }) => {
   return (
     <Box m="50px 0">
       <Box padding={{ base: "0 15px" }}>
@@ -18,7 +17,7 @@ const AboutMe: React.FC<AboutMe> = ({ imgPath, title, text }) => {
       <Box
         display={"flex"}
         justifyContent="center"
-        alignItems={{ base: "center", md: "stretch" }}
+        alignItems={{ base: "center" }}
         flexDir={{ base: "column", md: "row" }}
         maxWidth={"900px"}
         margin="0 auto"
@@ -32,6 +31,7 @@ const AboutMe: React.FC<AboutMe> = ({ imgPath, title, text }) => {
           height={"320px"}
           objectFit="cover"
           borderRadius={"25%"}
+          objectPosition={"bottom"}
         />
         <Box w={{ base: "100%", md: "65%" }}>
           <Text

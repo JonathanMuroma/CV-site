@@ -60,7 +60,7 @@ const CtaBanner: React.FC<CtaBanner> = ({
             >
               {text}
             </Text>
-            <Button label={buttonLabel} link={link} />
+            <Button label={buttonLabel} link={link} target={true} />
           </Flex>
         </Box>
       </ScrollAnimation>

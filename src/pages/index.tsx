@@ -29,7 +29,7 @@ const HomePage: NextPage = () => {
       <CtaBanner
         title="Check the code on github!"
         text="Take a look at this sites github page and look into the code and how this was made."
-        link="https://www.youtube.com/"
+        link="https://github.com/JonathanMuroma/CV-site"
         buttonLabel="Check it out!"
       />
     </Box>

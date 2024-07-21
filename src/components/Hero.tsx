@@ -48,8 +48,7 @@ const Hero: React.FC<Hero> = ({
         alignItems="center"
         justifyContent={"space-between"}
         flexDir="row"
-        //backgroundColor={gradient}
-        backgroundColor={"rgba(0,0,0,0.4)"}
+        backgroundColor={"rgba(0,0,0,0.3)"}
         padding={{ base: "0 15px", sm: "0 75px", md: "0 100px" }}
         zIndex={"10"}
       >

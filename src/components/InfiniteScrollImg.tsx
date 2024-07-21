@@ -1,11 +1,7 @@
 import React from "react";
 import { Box, Img, keyframes, Flex } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import {
-  CEREAL_BLACK,
-  CEREAL_DARK_AQUA,
-  CEREAL_DARK_GREEN,
-} from "@/utils/constants";
+import { CEREAL_DARK_GREEN } from "@/utils/constants";
 
 interface infiniteScrollImg {}
 
@@ -27,8 +23,30 @@ const InfiniteScrollImg: React.FC<infiniteScrollImg> = () => {
           h={"100%"}
           w="100%"
         >
-          <Img src="images/hero_banner_02.png" objectFit={"cover"} />
-          <Img src="images/hero_banner_02.png" objectFit={"cover"} />
+          <Img
+            src="images/hero_banner_02.png"
+            display={{ base: "none", md: "block" }}
+            objectFit={"cover"}
+            alt="hero"
+          />
+          <Img
+            src="images/hero_banner_02.png"
+            display={{ base: "none", md: "block" }}
+            objectFit={"cover"}
+            alt="hero"
+          />
+          <Img
+            src="images/mobile_hero.png"
+            display={{ base: "block", md: "none" }}
+            objectFit={"cover"}
+            alt="mobile hero"
+          />
+          <Img
+            src="images/mobile_hero.png"
+            display={{ base: "block", md: "none" }}
+            objectFit={"cover"}
+            alt="mobile hero"
+          />
         </Flex>
       </Box>
     </Box>

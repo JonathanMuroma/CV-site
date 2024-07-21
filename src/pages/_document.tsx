@@ -8,8 +8,7 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         ></link>
-        {/*TODO add proper favicon */}
-        <link rel="icon" href="/images/Gow_icon.png" sizes="any" />
+        <link rel="icon" href="/images/favicon.png" sizes="any" />
       </Head>
       <body>
         <Main />

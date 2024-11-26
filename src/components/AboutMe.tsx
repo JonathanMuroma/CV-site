@@ -40,11 +40,10 @@ const AboutMe: React.FC<AboutMe> = ({ imgPath, title }) => {
             textAlign={{ base: "left", sm: "center", md: "left" }}
           >
             Hi! I&apos;m Jonathan Muroma, a web/software developer from Finland.
-            With expertise in various web technologies like React, Next.js, and
-            Wordpress, I primarily focus on front-end development while
-            exploring back-end. Additionally, I&apos;ve worked with engines like
-            Unity and Unreal, crafting VR applications and games. Passionate
-            about continuous learning and helping others, I&apos;m also a proud
+            With expertise in various web technologies like React, Node.Js, and
+            Wordpress. Additionally, I&apos;ve worked with engines like Unity
+            and Unreal, crafting VR applications and games. Passionate about
+            continuous learning and helping others, I&apos;m also a proud
             &apos;father&apos; of two cats and in my free time, I enjoy gaming
             with friends and indulging my inner nerd.
           </Text>

@@ -10,8 +10,15 @@ interface SkillList {}
 
 const skills = [
   "Frontend",
+  "Backend",
+  "Fullstack",
   "Web development",
   "Unity engine",
+  "Node.Js",
+  "MongoDb",
+  "Express",
+  "PostgreSQL",
+  "Mongoose",
   "Nextjs",
   "Prisma",
   "C#",
@@ -21,6 +28,8 @@ const skills = [
   "React",
   "HTML",
   "CSS",
+  "Boostrap",
+  "Chackra-UI",
   "VR development",
   "Javascript",
   "Typescript",
@@ -30,7 +39,6 @@ const skills = [
   "English",
   "Teamwork",
   "Customer service",
-  "Leadership",
 ];
 
 const traits = [

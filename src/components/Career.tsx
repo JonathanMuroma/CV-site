@@ -8,10 +8,10 @@ interface Career {}
 
 const componentData = [
   {
-    date: "03.2021 - Current day",
-    title: "Tecci - Front-end web developer",
+    date: "03.2021 - 09.2024",
+    title: "Tecci - Web developer",
     link: "Link to details of place?",
-    text: "Front-end web developer. Worked solo and in small teams on multiple websites created with React, Nextjs and Wordpress. Company being a consult firm, I've been part of creating all sorts of websites and services for all types of clients, from big to smaller ones.",
+    text: "Web developer. Worked solo and in small teams on multiple websites created with React, Nextjs and Wordpress. Company being a consult firm, I've been part of creating all sorts of websites and services for all types of clients, from big to smaller ones.",
     icon: "images/Tecci_logo.png",
     iconAlt: "Tecci",
   },

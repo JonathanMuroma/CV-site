@@ -18,6 +18,11 @@ const Menu: React.FC<{}> = ({}) => {
       link: "/projects",
     },
     {
+      label: "Github",
+      link: "https://github.com/JonathanMuroma?tab=repositories",
+      target: "_blank",
+    },
+    {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/jonathan-muroma-0808b018a",
       target: "_blank",

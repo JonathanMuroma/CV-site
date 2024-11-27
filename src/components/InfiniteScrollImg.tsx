@@ -6,8 +6,8 @@ import { CEREAL_DARK_GREEN } from "@/utils/constants";
 interface infiniteScrollImg {}
 
 const InfiniteScrollImg: React.FC<infiniteScrollImg> = () => {
-  const animationKeyframes = keyframes`0% { transform: translateX(0);  }
-  100% { transform:  translateX(-100%); }`;
+  const animationKeyframes = keyframes`from { transform: translateX(0);  }
+  to { transform:  translateX(-100%); }`;
 
   const animation = `${animationKeyframes} 12s linear infinite`;
 
